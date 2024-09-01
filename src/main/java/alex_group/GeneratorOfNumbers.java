@@ -22,7 +22,7 @@ public class GeneratorOfNumbers {
                 ))
                 .entrySet()
                 .stream()
-                .sorted((entry1, entry2) -> entry2.getValue().compareTo(entry1.getValue())) // Сортировка по убыванию стоимости
+                .sorted((entry1, entry2) -> entry2.getValue().compareTo(entry1.getValue()))
                 .limit(3)
                 .toList();
 

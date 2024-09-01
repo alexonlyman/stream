@@ -21,7 +21,7 @@ public class ParallelStream {
                         Map.Entry::getKey,
                         Collectors.mapping(
                                 Map.Entry::getValue,
-                                Collectors.averagingDouble(Integer::doubleValue) // Среднее значение
+                                Collectors.averagingDouble(Integer::doubleValue)
                         )
                 ));
 
